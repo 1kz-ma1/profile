@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介 - 木下和磨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<header>
+        <h1>～プロフィール～</h1>
+        <img src="写真/トップヘッダー.jpeg" alt="ヘッダー画像" class="header-image">
+        <nav>
+            <a href="index.html"><i class="fas fa-house"></i>ホーム</a>
+            <a href="about.html"><i class="fas fa-user"></i>プロフィール</a>
+            <a href="works.html"><i class="fas fa-image"></i>作品紹介</a> 
+            <a href="blog.html"><i class="fas fa-envelope"></i>SNS</a>
+            <a href="contact.html"><i class="fas fa-pen-nib"></i>お問い合わせ</a>
+        </nav>
+</header>
+
+<main>
+<body>
+
+<section class="animated-profile"><div class="profile-card fade-in"><div class="profile-header">
+        <h2 class="slide-in pro">木下 和磨</h2>
+        <p class="slide-in pro">立川情報IT<br>クリエイター<br>専門学校 1年生</p>
+      <img src="写真/プロフィール.jpg" alt="プロフィール写真" class="profile-photo">
+</div></div></section><hr>  
+
+<section class="animated-profile career-history"><div class="profile-card fade-in"><div class="profile-header">
+  <h2 class="slide-in pro2">経歴</h2>
+  <table>
+    <tbody>
+      <tr>
+        <td>2022年4月</td>
+        <td>味ん味ん に入社(アルバイト)</td>
+      </tr>
+      <tr>
+        <td>2022年4月</td>
+        <td>日野高校 に入学</td>
+      </tr>
+      <tr>
+        <td>2024年8月</td>
+        <td>ハッカソン in Microsoft社 に参加</td>
+      </tr>
+      <tr>
+        <td>2025年2月</td>
+        <td>ITパスポート を取得</td>
+      </tr>
+      <tr>
+        <td>2025年3月</td>
+        <td>日野高校 を卒業</td>
+      </tr>
+      <tr>
+        <td>2025年4月</td>
+        <td>立川情報ITクリエイター専門学校 入学</td>
+      </tr>
+    </tbody>
+  </table>
+</div></div></section><hr>
+    
+<section class="animated-profile"><div class="profile-card fade-in"><div class="profile-header">
+        <h2 class="slide-in pro2">趣味・特技</h2>
+        <p class="slide-in pro">歌・ギター・ゲーム・<br>アルバイト</p>
+</div></div></section><hr>
+
+<section class="animated-profile"><div class="profile-card fade-in"><div class="profile-header">
+        <h2 class="slide-in pro2">好きな歌手</h2>
+        <p class="slide-in pro3">優里、Mr.s Green Apple、<br>back number、MY FIRST STORY</p>
+</div></div></section><hr>  
+
+<section class="animated-profile"><div class="profile-card fade-in"><div class="profile-header">
+        <h2 class="slide-in pro2">飼い猫</h2>
+        <p class="slide-in pro3">ぽんきち</p>
+        <img src="写真/ぽんきち.jpg" alt="プロフィール写真" class="profile-photo">
+        <br>
+        <p class="slide-in pro3">おこめ</p>
+        <img src="写真/おこめ.jpg" alt="プロフィール写真" class="profile-photo">
+</div></div></section><hr>
+
+<section class="animated-profile"><div class="profile-card fade-in"><div class="profile-header">
+        <h2 class="slide-in pro2">バイト先</h2>
+        <p class="slide-in pro2">焼肉屋「味ん味ん」</p>
+<div class="google-map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.420994052155!2d139.3948040757976!3d35.65663997259196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018e0a3f0c3b3a1%3A0x3b4a3c9f3f3a0b3a!2z5p2x5Lqs5p2x5LqsIOWkp-Wkp-Wkp-WkpQ!5e0!3m2!1sja!2sjp!4v1716012345678!5m2!1sja!2sjp"></iframe>
+</div></div></div></section><hr>
+
+<section class="animated-profile"><div class="profile-card fade-in"><div class="profile-header">
+        <h2 class="slide-in pro2">現在の目標</h2>
+        <p class="slide-in pro3">FE(基本情報技術者)を取得し、<br>
+        就職活動の前にAP(応用情報技術者)を<br>取得する。</p>
+</div></div></section><hr>  
+
+</body>
+</main>
+<hr>
+<footer>
+    <p class="style3">&copy; 2025 木下和磨</p>
+</footer>
+
+<script>
+  const cards = document.querySelectorAll('.profile-card');
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        entry.target.classList.remove('hidden');
+      } else {
+        entry.target.classList.remove('visible');
+        entry.target.classList.add('hidden');
+      }
+    });
+  }, {
+    threshold: 0.1
+  });
+
+  cards.forEach(card => {
+    observer.observe(card);
+  });
+</script>
+
+</html>
+
+</html>

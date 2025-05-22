@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | 木下和磨</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+<body>
+  <header>
+    <h1>～お問い合わせ～</h1>
+        <img src="写真/トップヘッダー.jpeg" alt="ヘッダー画像" class="header-image">
+        <nav>
+            <a href="index.html"><i class="fas fa-house"></i>ホーム</a>
+            <a href="about.html"><i class="fas fa-user"></i>プロフィール</a>
+            <a href="works.html"><i class="fas fa-image"></i>作品紹介</a> 
+            <a href="blog.html"><i class="fas fa-envelope"></i>SNS</a>
+            <a href="contact.html"><i class="fas fa-pen-nib"></i>お問い合わせ</a>
+        </nav>
+    </header>
+  </header>
+  <div style="text-align: right; margin-right: 10%">
+  <h2>～連絡先～</h2>
+  </div>
+  <a class="social-button line" href="https://line.me/ti/p/tpex4579_g" target="_blank">
+    <img src="写真/LINE.jpg" alt="LINE" class="social-icon line-icon" >
+  </a>
+<br><br><hr>
+<section class="contact-form">
+  <div style="text-align: center;"><h2>～お問い合わせフォーム～</h2></div>
+<form action="https://formsubmit.co/tck2563850@tck.o-hara.ac.jp" method="POST">
+    <div class="tableM">
+    <table>
+      <tr>
+        <th><label for="name">名前</label></th>
+        <td><input type="text" id="name" name="name" required></td>
+      </tr>
+      <tr>
+        <th><label for="email">メールアドレス</label></th>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <th>このサイトの中で一番良いと感じたページ</th>
+        <td>
+          <select name="best_page" required class="selextion">
+            <option value="">選択してください</option>
+            <option value="ホーム">ホーム</option>
+            <option value="プロフィール">プロフィール</option>
+            <option value="作品紹介">作品紹介</option>
+            <option value="お問い合わせ">お問い合わせ</option>
+            <option value="SNS">SNS</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>改良が必要だと思ったページ</th>
+        <td>
+          <select name="improve_page" required class="selextion">
+            <option value="">選択してください</option>
+            <option value="ホーム">ホーム</option>
+            <option value="プロフィール">プロフィール</option>
+            <option value="作品紹介">作品紹介</option>
+            <option value="お問い合わせ">お問い合わせ</option>
+            <option value="SNS">SNS</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>作品紹介のゲームの感想</th>
+        <td class="checkbox-group">
+          <label><input type="checkbox" name="game_feedback[]" value="楽しかった"> 楽しかった</label>
+          <label><input type="checkbox" name="game_feedback[]" value="難しかった"> 難しかった</label>
+          <label><input type="checkbox" name="game_feedback[]" value="もっと遊びたい"> もっと遊びたい</label>
+          <label><input type="checkbox" name="game_feedback[]" value="改善の余地あり"> 改善の余地あり</label>
+          <label>その他: <input type="text" name="game_feedback_other"></label>
+        </td>
+      </tr>
+      <tr>
+        <th><label for="message">その他、ご自由にお書きください</label></th>
+        <td><textarea id="message" name="message" rows="5"></textarea></td>
+      </tr>
+    </table>
+    <button type="submit">送信</button>
+  </form>
+</div>
+</section>
+
+
+
+<hr>
+  <footer>
+    <p class="style3">&copy; 2025 木下和磨</p>
+  </footer>
+</body>
+</html>
